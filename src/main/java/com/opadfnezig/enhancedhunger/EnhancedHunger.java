@@ -64,13 +64,13 @@ public class EnhancedHunger
         eventBus.addListener(this::doClientStuff);
 
 
-       try {
+       /*try {
             Item item = ForgeRegistries.ITEMS.getValue(ForgeRegistries.ITEMS.getKey(Items.APPLE));
             Field a = item.getClass().getDeclaredField("maxStackSize");
             a.setAccessible(true);
             a.set(item,1);
 
-        }catch (Exception e){}
+        }catch (Exception e){}*/
 
         // Register ourselves for server and other game events we are interested in
         VanillaModifier.modify();

@@ -22,7 +22,7 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EnhancedHunger.MOD_ID);
 
-    public static final RegistryObject<Item> CRAP =  ITEMS.register("crap",()->{
+    public static final RegistryObject<Item> SHEET =  ITEMS.register("crap",()->{
         Item.Properties prop = new Item.Properties();
         prop.food(new Food.Builder().saturation(1f).hunger(-20).setAlwaysEdible().build());
         return new Item(prop);
