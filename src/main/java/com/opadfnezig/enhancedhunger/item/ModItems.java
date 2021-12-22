@@ -31,7 +31,7 @@ public class ModItems {
     //RAW
 
     public static final RegistryObject<Item> APPLE = registerVanillaFoodAnalog("apple",Items.APPLE.getFood().getSaturation(),Items.APPLE);
-    public static final RegistryObject<Item> BEETROOT = registerVanillaFoodAnalog("beetroot",Items.BEETROOT.getFood().getSaturation(),Items.BEETROOT);
+    //public static final RegistryObject<Item> BEETROOT = registerVanillaFoodAnalog("beetroot",Items.BEETROOT.getFood().getSaturation(),Items.BEETROOT);
     public static final RegistryObject<Item> CARROT = registerVanillaFoodAnalog("carrot",Items.CARROT.getFood().getSaturation(),Items.CARROT);
     //no chorus
     public static final RegistryObject<Item> MELON_SLICE = registerVanillaFoodAnalog("melon_slice",Items.MELON_SLICE.getFood().getSaturation(),Items.MELON_SLICE);
