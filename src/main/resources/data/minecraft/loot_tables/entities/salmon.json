@@ -8,18 +8,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:furnace_smelt",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "predicate": {
-                    "flags": {
-                      "is_on_fire": true
-                    }
-                  },
-                  "entity": "this"
-                }
-              ]
+              "function": "set_nbt",
+              "tag": "{Damage:35}"
             }
           ],
           "name": "minecraft:salmon"

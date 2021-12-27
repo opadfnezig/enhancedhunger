@@ -6,7 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -24,28 +23,22 @@
               }
             }
           ],
-          "name": "minecraft:cod"
-        },
+          "name": "minecraft:leather"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
+          "name": "enhancedhunger:beef",
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 0.0,
-                "max": 2.0,
-                "type": "minecraft:uniform"
-              }
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 1.0
-              }
+              "function": "set_nbt",
+              "tag": "{Damage:26}"
             }
-          ],
-          "name": "minecraft:salmon"
+          ]
         }
       ]
     }
