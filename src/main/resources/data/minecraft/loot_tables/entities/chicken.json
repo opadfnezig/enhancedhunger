@@ -32,7 +32,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "enhancedhunger:carrot",
+          "name": "enhancedhunger:chicken",
           "functions": [
             {
               "function": "set_nbt",
