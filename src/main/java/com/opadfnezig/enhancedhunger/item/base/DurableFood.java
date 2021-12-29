@@ -1,4 +1,4 @@
-package com.opadfnezig.enhancedhunger;
+package com.opadfnezig.enhancedhunger.item.base;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 
 public class DurableFood extends DurableItem {
     public static int DIVIDER = 1;
-    public static int MAX_FOOD_DURABILITY = 40;
+    public static int MAX_DURABILITY = 40;
     private short CONSUME_MAX = 4;
 
 

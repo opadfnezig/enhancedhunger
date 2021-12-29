@@ -1,4 +1,4 @@
-package com.opadfnezig.enhancedhunger;
+package com.opadfnezig.enhancedhunger.item.base;
 
 public class DurableFoodItem extends DurableFood {
 

@@ -14,17 +14,17 @@ public class VanillaModifier {
         //RAW
         removeFood(Items.APPLE);
         removeFood(Items.BEETROOT);
-        removeFood(Items.CARROT);
-        removeFood(Items.CHORUS_FRUIT);
+        //removeFood(Items.CARROT);
+        //removeFood(Items.CHORUS_FRUIT);
         removeFood(Items.MELON_SLICE);
-        removeFood(Items.POTATO);
-        removeFood(Items.SWEET_BERRIES);
+        //removeFood(Items.POTATO);
+        //removeFood(Items.SWEET_BERRIES);
 
         //PROCEEDED
         removeFood(Items.BREAD);
         removeFood(Items.COOKIE);
         removeFood(Items.GOLDEN_CARROT);
-        removeFood(Items.HONEY_BOTTLE);
+        //removeFood(Items.HONEY_BOTTLE);
         removeFood(Items.PUMPKIN_PIE);
 
         //COOKED
