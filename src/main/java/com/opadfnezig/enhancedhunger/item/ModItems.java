@@ -4,11 +4,14 @@ import com.opadfnezig.enhancedhunger.item.base.DurableFoodItem;
 import com.opadfnezig.enhancedhunger.item.base.DurableItem;
 import com.opadfnezig.enhancedhunger.EnhancedHunger;
 import com.opadfnezig.enhancedhunger.item.base.EHTool;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.Properties;
 
 public class ModItems {
 
@@ -78,15 +81,10 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_SALMON = Utils.regVanillaFoodAnalog("cooked_salmon", Items.COOKED_SALMON.getFood().getSaturation(), Items.COOKED_SALMON);
 
     //SEEDS
-    public static final RegistryObject<Item> CARROT_SEED = ITEMS.register("carrot_seed", () -> new Item(new Item.Properties().group(ItemGroup.MATERIALS)));
-
+    public static final RegistryObject<Item> CARROT_SEEDS = ITEMS.register("carrot_seeds",()-> new BlockNamedItem(Blocks.CARROTS,new Item.Properties().group(ItemGroup.MATERIALS)));
     //TOOLS
-    public static final RegistryObject<EHTool> SEED_EXTRACTOR = ITEMS.register("seed_extractor", () -> {
-        return new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024));
-    });
-    public static final RegistryObject<EHTool> KNIFE = ITEMS.register("knife", () -> {
-        return new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024));
-    });
+    public static final RegistryObject<EHTool> SEED_EXTRACTOR = ITEMS.register("seed_extractor", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024)));
+    public static final RegistryObject<EHTool> KNIFE = ITEMS.register("knife", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024)));
 
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> {
         Item.Properties properties = new Item.Properties();
