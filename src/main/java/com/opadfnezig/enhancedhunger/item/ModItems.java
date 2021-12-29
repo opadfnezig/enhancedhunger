@@ -46,6 +46,8 @@ public class ModItems {
     public static final RegistryObject<Item> HONEY_BOTTLE = registerVanillaFoodAnalog("honey_bottle",Items.HONEY_BOTTLE.getFood().getSaturation(),Items.HONEY_BOTTLE);
     public static final RegistryObject<Item> PUMPKIN_PIE = registerVanillaFoodAnalog("pumpkin_pie",Items.PUMPKIN_PIE.getFood().getSaturation(),Items.PUMPKIN_PIE);
 
+    public static final RegistryObject<Item> CARROT_SEED = ITEMS.register("carrot_seed", ()-> new Item(new Item.Properties().group(ItemGroup.MATERIALS)));
+
     //COOKED
     public static final RegistryObject<Item> BAKED_POTATO = registerVanillaFoodAnalog("baked_potato",Items.BAKED_POTATO.getFood().getSaturation(),Items.BAKED_POTATO);
     //u just shouldn't do this
