@@ -82,6 +82,7 @@ public class ModItems {
 
     //SEEDS
     public static final RegistryObject<Item> CARROT_SEEDS = ITEMS.register("carrot_seeds",()-> new BlockNamedItem(Blocks.CARROTS,new Item.Properties().group(ItemGroup.MATERIALS)));
+    public static final RegistryObject<Item> POTATO_SEEDS = ITEMS.register("potato_seeds",()-> new BlockNamedItem(Blocks.POTATOES,new Item.Properties().group(ItemGroup.MATERIALS)));
     //TOOLS
     public static final RegistryObject<EHTool> SEED_EXTRACTOR = ITEMS.register("seed_extractor", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024)));
     public static final RegistryObject<EHTool> KNIFE = ITEMS.register("knife", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024)));
