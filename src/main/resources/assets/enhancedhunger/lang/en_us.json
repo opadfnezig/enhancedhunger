@@ -30,5 +30,7 @@
   "item.enhancedhunger.carrot_seeds": "Carrot Seeds",
   "item.enhancedhunger.potato_seeds": "Potato Seeds",
   "item.enhancedhunger.knife": "Knife",
-  "item.enhancedhunger.seed_extractor": "Seed Extractor"
+  "item.enhancedhunger.seed_extractor": "Seed Extractor",
+  "block.enhancedhunger.cutting_board": "Cutting Board",
+  "itemGroup.customModTab": "Mod group"
 }

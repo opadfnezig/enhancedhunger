@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "enhancedhunger:block/cutting_board"
+  }
+}

@@ -1,5 +1,6 @@
 package com.opadfnezig.enhancedhunger.item;
 
+import com.opadfnezig.enhancedhunger.ModItemGroup;
 import com.opadfnezig.enhancedhunger.item.base.DurableFoodItem;
 import com.opadfnezig.enhancedhunger.item.base.DurableItem;
 import com.opadfnezig.enhancedhunger.EnhancedHunger;
@@ -81,11 +82,11 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_SALMON = Utils.regVanillaFoodAnalog("cooked_salmon", Items.COOKED_SALMON.getFood().getSaturation(), Items.COOKED_SALMON);
 
     //SEEDS
-    public static final RegistryObject<Item> CARROT_SEEDS = ITEMS.register("carrot_seeds",()-> new BlockNamedItem(Blocks.CARROTS,new Item.Properties().group(ItemGroup.MATERIALS)));
-    public static final RegistryObject<Item> POTATO_SEEDS = ITEMS.register("potato_seeds",()-> new BlockNamedItem(Blocks.POTATOES,new Item.Properties().group(ItemGroup.MATERIALS)));
+    public static final RegistryObject<Item> CARROT_SEEDS = ITEMS.register("carrot_seeds",()-> new BlockNamedItem(Blocks.CARROTS,new Item.Properties().group(ModItemGroup.MOD_GROUP)));
+    public static final RegistryObject<Item> POTATO_SEEDS = ITEMS.register("potato_seeds",()-> new BlockNamedItem(Blocks.POTATOES,new Item.Properties().group(ModItemGroup.MOD_GROUP)));
     //TOOLS
-    public static final RegistryObject<EHTool> SEED_EXTRACTOR = ITEMS.register("seed_extractor", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024)));
-    public static final RegistryObject<EHTool> KNIFE = ITEMS.register("knife", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1024)));
+    public static final RegistryObject<EHTool> SEED_EXTRACTOR = ITEMS.register("seed_extractor", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ModItemGroup.MOD_GROUP).maxDamage(1024)));
+    public static final RegistryObject<EHTool> KNIFE = ITEMS.register("knife", () -> new EHTool(ItemTier.WOOD, 5f, -2.4f, new Item.Properties().group(ModItemGroup.MOD_GROUP).maxDamage(1024)));
 
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> {
         Item.Properties properties = new Item.Properties();
