@@ -6,10 +6,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": {
+          "functions": [
+            {
               "function": "set_nbt",
               "tag": "{Damage:36}"
-            },
+            }
+          ],
           "name": "enhancedhunger:mutton"
         }
       ]

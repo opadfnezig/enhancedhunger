@@ -11,8 +11,8 @@ public class DurableItem extends Item {
     public static int DIVIDER = 1;
     public static int MAX_DURABILITY = 40;
 
-    public DurableItem(Properties p_i48487_1_) {
-        super(p_i48487_1_);
+    public DurableItem(Properties properties) {
+        super(properties);
     }
 
     @Override

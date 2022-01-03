@@ -18,13 +18,13 @@ public class DurableFood extends DurableItem {
     private short CONSUME_MAX = 4;
 
 
-    public DurableFood(Properties p_i48487_1_,short consumeMax)
+    public DurableFood(Properties properties,short consumeMax)
     {
-        super(p_i48487_1_);
+        super(properties);
         CONSUME_MAX = consumeMax;
     }
 
-    public DurableFood(Properties p_i48487_1_)  { super(p_i48487_1_); }
+    public DurableFood(Properties properties)  { super(properties); }
 
     //this is absolute rubbish, but can't do anything with it
     private short restoreAmount = 0;
