@@ -1,11 +1,7 @@
 package com.opadfnezig.enhancedhunger.item.base;
 
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-
-import javax.annotation.Nonnull;
-import java.util.function.Consumer;
 
 public class DurableItem extends Item {
     public static int DIVIDER = 1;
@@ -15,15 +11,17 @@ public class DurableItem extends Item {
         super(properties);
     }
 
-    @Override
-    public ItemStack getContainerItem(@Nonnull ItemStack stack) {
-        stack.damageItem(1, null, new Consumer<LivingEntity>() {
-            @Override
-            public void accept(LivingEntity livingEntity) {
-                stack.setCount(0);
-            }
-        });
-        return stack;
+   /* @Override
+    public boolean hasContainerItem(ItemStack stack) {
+        return true;
     }
 
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        ItemStack stack = itemStack.copy();
+        stack.setDamage(stack.getDamage()+1);
+        if(stack.getDamage() > stack.getMaxDamage())
+            stack.setCount(0);
+        return stack;
+    }*/
 }

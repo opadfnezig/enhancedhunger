@@ -19,7 +19,6 @@ public class ModItems {
 
     static Item.Properties DEFAULT_PROPERTIES;
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EnhancedHunger.MOD_ID);
-    static ItemGroup FOOD_ITEM_GROUP = ItemGroup.FOOD;
 
     public static final RegistryObject<Item> SHEET = ITEMS.register("crap", () -> {
         Item.Properties prop = new Item.Properties();
@@ -92,8 +91,8 @@ public class ModItems {
         Item.Properties properties = new Item.Properties();
         properties.maxStackSize(16);
         properties.maxDamage(DurableFoodItem.DIVIDER * DurableFoodItem.MAX_DURABILITY);
-        properties.group(ItemGroup.FOOD);
-        return new Item(Utils.getDefaultProp(1, DurableFoodItem.DIVIDER * DurableFoodItem.MAX_DURABILITY, ItemGroup.FOOD));
+        properties.group(ModItemGroup.MOD_GROUP);
+        return new Item(Utils.getDefaultProp(1, DurableFoodItem.DIVIDER * DurableFoodItem.MAX_DURABILITY, ModItemGroup.MOD_GROUP));
     });
 
     private static class Utils {
@@ -106,7 +105,7 @@ public class ModItems {
 
         private static RegistryObject<Item> regRawVanillaFoodAnalog(String name, float saturation, Item item) {
             return ITEMS.register(name, () -> {
-                return new DurableItem(getDefaultProp(1, DurableItem.MAX_DURABILITY, ItemGroup.FOOD));
+                return new DurableItem(getDefaultProp(1, DurableItem.MAX_DURABILITY, ModItemGroup.MOD_GROUP));
             });
         }
 
@@ -114,8 +113,10 @@ public class ModItems {
             Item.Properties properties = new Item.Properties();
             properties.maxStackSize(1);
             properties.maxDamage(DurableFoodItem.DIVIDER * DurableFoodItem.MAX_DURABILITY);
-            properties.group(ItemGroup.FOOD);
+            properties.group(ModItemGroup.MOD_GROUP);
             properties.food(food);
+            properties.setNoRepair();
+            //properties.containerItem(Items.ROTTEN_FLESH);
             return properties;
         }
 
@@ -124,6 +125,8 @@ public class ModItems {
             properties.maxStackSize(maxStackSize);
             properties.maxDamage(maxDamage);
             properties.group(group);
+            properties.setNoRepair();
+            //properties.containerItem(new Item(null))
             return properties;
         }
     }

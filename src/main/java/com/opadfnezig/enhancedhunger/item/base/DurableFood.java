@@ -17,7 +17,6 @@ public class DurableFood extends DurableItem {
     public static int MAX_DURABILITY = 40;
     private short CONSUME_MAX = 4;
 
-
     public DurableFood(Properties properties,short consumeMax)
     {
         super(properties);

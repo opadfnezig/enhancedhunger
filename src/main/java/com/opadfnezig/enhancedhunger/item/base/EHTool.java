@@ -2,6 +2,7 @@ package com.opadfnezig.enhancedhunger.item.base;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 
@@ -13,8 +14,16 @@ public class EHTool extends ToolItem {
     }
 
     @Override
-    public ItemStack getContainerItem(@Nonnull ItemStack stack) {
-        stack.damageItem(1, null, livingEntity -> stack.setCount(0));
+    public boolean hasContainerItem(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        ItemStack stack = itemStack.copy();
+        stack.setDamage(stack.getDamage()+1);
+        if(stack.getDamage() > stack.getMaxDamage())
+            stack.setCount(0);
         return stack;
     }
 
@@ -23,3 +32,4 @@ public class EHTool extends ToolItem {
         return super.getDestroySpeed(stack, state);
     }
 }
+

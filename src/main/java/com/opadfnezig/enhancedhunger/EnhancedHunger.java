@@ -1,6 +1,7 @@
 package com.opadfnezig.enhancedhunger;
 
 import com.opadfnezig.enhancedhunger.block.ModBlocks;
+import com.opadfnezig.enhancedhunger.data.recipes.ModRecipeTypes;
 import com.opadfnezig.enhancedhunger.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -40,6 +41,7 @@ public class EnhancedHunger
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModRecipeTypes.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -143,7 +145,6 @@ public class EnhancedHunger
     public void onEntityDrop(LivingDropsEvent event){
 
     }
-
 
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
