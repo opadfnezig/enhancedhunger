@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:pumpkin_pie"
+    },
+    {
+      "item": "enhancedhunger:pumpkin_pie"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:pumpkin_pie",
+    "count": 1
+  }
+}

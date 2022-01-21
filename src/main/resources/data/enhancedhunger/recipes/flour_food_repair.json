@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:flour"
+    },
+    {
+      "item": "enhancedhunger:flour"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:flour",
+    "count": 1
+  }
+}

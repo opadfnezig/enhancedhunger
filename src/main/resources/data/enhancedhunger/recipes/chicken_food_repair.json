@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:chicken"
+    },
+    {
+      "item": "enhancedhunger:chicken"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:chicken",
+    "count": 1
+  }
+}

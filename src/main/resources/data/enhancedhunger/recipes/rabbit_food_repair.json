@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:rabbit"
+    },
+    {
+      "item": "enhancedhunger:rabbit"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:rabbit",
+    "count": 1
+  }
+}

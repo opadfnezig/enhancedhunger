@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:cooked_porkchop"
+    },
+    {
+      "item": "enhancedhunger:cooked_porkchop"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:cooked_porkchop",
+    "count": 1
+  }
+}

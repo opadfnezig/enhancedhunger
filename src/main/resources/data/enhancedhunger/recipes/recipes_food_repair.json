@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:recipes"
+    },
+    {
+      "item": "enhancedhunger:recipes"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:recipes",
+    "count": 1
+  }
+}

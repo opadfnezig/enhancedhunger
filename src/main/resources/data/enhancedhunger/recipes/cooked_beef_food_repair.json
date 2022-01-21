@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:cooked_beef"
+    },
+    {
+      "item": "enhancedhunger:cooked_beef"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:cooked_beef",
+    "count": 1
+  }
+}

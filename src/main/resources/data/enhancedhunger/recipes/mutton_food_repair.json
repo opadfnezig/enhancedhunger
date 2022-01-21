@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:mutton"
+    },
+    {
+      "item": "enhancedhunger:mutton"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:mutton",
+    "count": 1
+  }
+}

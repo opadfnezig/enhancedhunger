@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:salmon"
+    },
+    {
+      "item": "enhancedhunger:salmon"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:salmon",
+    "count": 1
+  }
+}

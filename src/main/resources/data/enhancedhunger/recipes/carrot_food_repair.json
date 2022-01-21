@@ -1,0 +1,15 @@
+{
+  "type": "enhancedhunger:food_repair",
+  "ingredients": [
+    {
+      "item": "enhancedhunger:carrot"
+    },
+    {
+      "item": "enhancedhunger:carrot"
+    }
+  ],
+  "result": {
+    "item": "enhancedhunger:carrot",
+    "count": 1
+  }
+}
